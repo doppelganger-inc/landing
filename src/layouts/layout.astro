@@ -1,0 +1,23 @@
+---
+import Nav from "@/components/nav.astro";
+import "@/styles/global.css";
+---
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" type="image/svg+xml" href="/logo.webp" />
+        <link rel="icon" href="/logo.webp" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="generator" content={Astro.generator} />
+        <title>Doppelganger - {Astro.props.title}</title>
+    </head>
+    <body>
+        <div
+            class="flex flex-col items-center justify-center container max-w-4xl mx-auto"
+        >
+            <Nav />
+            <slot />
+        </div>
+    </body>
+</html>

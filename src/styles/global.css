@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+:root {
+    --bg-main: 247 246 242;
+}
+
+html {
+    background-color: rgb(var(--bg-main));
+}
+
+.radial-gradient {
+    background: radial-gradient(circle, rgb(var(--bg-main) / 0) 0%, rgb(var(--bg-main) / 0.98) 85%);
+}
