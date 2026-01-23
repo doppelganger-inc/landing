@@ -2,10 +2,12 @@
 import Logo from "@/components/logo.astro";
 ---
 
-<nav class="flex items-center justify-between w-full py-8 px-4">
+<nav
+    class="flex sm:flex-row items-start sm:items-center justify-between w-full py-6 md:py-8 px-4 gap-4 sm:gap-0"
+>
     <Logo />
 
-    <form id="newsletter-form" class="relative max-w-[300px]">
+    <form id="newsletter-form" class="relative w-full sm:max-w-[300px]">
         <div class="relative w-full">
             <input
                 id="email"
